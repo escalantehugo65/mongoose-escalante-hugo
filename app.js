@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3005;
 
 app.use(express.json());
 
+await StartDB();
+
 app.listen(PORT, ()=>{
     console.log("El servidor arrancó correctamente");
 });
